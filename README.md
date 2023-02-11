@@ -1,4 +1,4 @@
-# Calculadora Simples
+# Calculadora Simples com opção de modo escuro
 Essa é uma calculadora simples feita em JavaScript que permite realizar cálculos básicos diretamente em seu navegador.
 
 ## Recursos
