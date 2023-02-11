@@ -9,10 +9,11 @@ Essa é uma calculadora simples feita em JavaScript que permite realizar cálcul
 - Limpeza da tela
 
 ## Como usar
-Abra o arquivo index.html em seu navegador preferido.
-Digite dois números separados por um operador (+, -, *, / ou %).
-Clique em "=" para exibir o resultado.
-Para limpar a tela, clique em "Limpar".
+- Abra o arquivo index.html em seu navegador preferido.
+- Digite dois números separados por um operador (+, -, *, / ou %).
+- Clique em "=" para exibir o resultado.
+- Para limpar a tela, clique em "Limpar".
+- Para mudar o tema, clique no botão no alto à direita.
 
 ## Personalização
 Este projeto é totalmente personalizável. Você pode modificar o estilo e adicionar novas funcionalidades ao código. Para fazer isso, basta clonar este repositório e editar os arquivos de acordo com suas necessidades.
