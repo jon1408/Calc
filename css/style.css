@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 400 16px/1.5 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: lightgray;
+}
+
+.dark{
+    background: #282c2f;
+}
+
+.dark .calculadora{
+    background: #33393e;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25), -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
+
+.calculadora{
+    position: relative;
+    width: 340px;
+    padding: 1.25rem;
+    background: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px rgba(255, 255, 255, 0.5);
+}
+
+.calculadora .buttons{
+    position: relative;
+    display: grid;
+}
+
+.calculadora .buttons #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: orange;
+    height: 6.25rem;
+    line-height: 6.25rem;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px #fff;
+    border-radius: .625rem;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.dark .calculadora .buttons #value{
+    background: #33393e;
+    color: #fff;
+    box-shadow: inset 15px 15px 20px rgba(0, 0, 0, 0.5), inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
+
+.calculadora .buttons span{
+    position: relative;
+    padding: .625rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px #fff;
+    margin: .625rem;
+    cursor: pointer;
+    user-select: none;
+    min-width: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #666;
+    border: 2px solid orange;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+}
+
+.dark .calculadora .buttons span{
+    color: #fff;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.calculadora .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
+    color: orangered;
+}
+
+.dark .calculadora .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.calculadora .buttons span#limpar{
+    grid-column: span 2;
+    background: orangered;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculadora .buttons span#soma{
+    grid-row: span 2;
+    background: green;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculadora .buttons span#igual{
+    grid-row: span 2;
+    background: royalblue;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.dark .calculadora .buttons span#limpar,
+.dark .calculadora .buttons span#soma,
+.dark .calculadora .buttons span#igual{
+    color: #fff;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.calculadora .buttons span#limpar:active,
+.calculadora .buttons span#soma:active,
+.calculadora .buttons span#igual:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff, inset -5px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark .calculadora .buttons span#limpar:active,
+.dark .calculadora .buttons span#soma:active,
+.dark .calculadora .buttons span#igual:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+    
+.toogleBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #555;
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
+
+}
+
+.dark .toogleBtn{
+    background: #edf1f4;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(0, 0, 0, 0.25);
+}
